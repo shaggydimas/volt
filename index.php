@@ -45,9 +45,7 @@
 				<a href="/">
 					<img width="80px" src="img/logo.svg" alt="VoltPartner">
 				</a>
-				<div class="langs">
-					<a href="/ru">RU</a>|<a href="/">EST</a>
-				</div>
+				<?php include 'partials/nav_langs.php' ?>
 			</div>
 			<ul>
 				<li><a href="#" data-scroll="#about">MEIST</a></li>
@@ -64,6 +62,7 @@
 				<li><a href="#">TEHTUD TÖÖD</a></li>
 				<li><a href="#" data-scroll="#contact">KONTAKT</a></li>
 			</ul>
+			<?php include 'partials/social_headers.php' ?>
 		</nav>
 	</header>
 	<section class="volt--top mh100">
@@ -158,7 +157,7 @@
 			</div>
 		</div>
 	</section>
-	<?php include 'services_et.php' ?>
+	<?php include 'partials/services_et.php' ?>
 	<section class="volt--contact mh100" id="contact">
 		<div class="container mt-15 clearfix">
 				<img width="240px" src="img/logo.svg" class="left" alt="VoltPartner">

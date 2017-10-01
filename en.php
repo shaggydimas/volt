@@ -32,10 +32,10 @@
 	<a href="#" class="burger-btn"><span></span></a>
 	<div class="mobile-menu">
 		<ul>
-			<li><a href="#" data-scroll="#about">О НАС</a></li>
-			<li><a href="#" data-scroll="#services">УСЛУГИ</a></li>
-			<li><a href="#">РАБОТЫ</a></li>
-			<li><a href="#" data-scroll="#contact">КОНТАКТ</a></li>
+			<li><a href="#" data-scroll="#about">ABOUT US</a></li>
+			<li><a href="#" data-scroll="#services">SERVICES</a></li>
+			<li><a href="#">WORKS</a></li>
+			<li><a href="#" data-scroll="#contact">CONTACT</a></li>
 		</ul>
 	</div>
 	<header class="main-nav">
@@ -47,19 +47,19 @@
 				<?php include 'partials/nav_langs.php' ?>
 			</div>
 			<ul>
-				<li><a href="#" data-scroll="#about">О НАС</a></li>
+				<li><a href="#" data-scroll="#about">ABOUT US</a></li>
 				<li class="dropdown-toggle">
-					<a href="#" data-scroll="#services">УСЛУГИ</a>
+					<a href="#" data-scroll="#services">SERVICES</a>
 					<ul class="dropdown">
-						<li><a href="#" data-scroll="#services" data-item="0">Электротехнические<br>работы</a></li>
-						<li><a href="#" data-scroll="#services" data-item="1">Система<br>видеонаблюдения</a></li>
-						<li><a href="#" data-scroll="#services" data-item="2">Контроль<br>доступа</a></li>
-						<li><a href="#" data-scroll="#services" data-item="3">Сигнализация</a></li>
-						<li><a href="#" data-scroll="#services" data-item="4">Проектирование</a></li>
+						<li><a href="#" data-scroll="#services" data-item="0">Electrical works</a></li>
+						<li><a href="#" data-scroll="#services" data-item="1">CCTV video surveillance</a></li>
+						<li><a href="#" data-scroll="#services" data-item="2">Access control</a></li>
+						<li><a href="#" data-scroll="#services" data-item="3">Alarms</a></li>
+						<li><a href="#" data-scroll="#services" data-item="4">Design</a></li>
 					</ul>
 				</li>
-				<li><a href="#">РАБОТЫ</a></li>
-				<li><a href="#" data-scroll="#contact">КОНТАКТ</a></li>
+				<li><a href="#">WORKS</a></li>
+				<li><a href="#" data-scroll="#contact">CONTACT</a></li>
 			</ul>
 			<?php include 'partials/social_headers.php' ?>
 		</nav>
@@ -69,7 +69,7 @@
 			<video id="video" src="video_tln.mp4" autoplay loop></video>
 		</div>
 		<div class="above-video">
-			<h1>Надёжные системы<br>вместе с <span>VoltPartner</span></h1>
+			<h1>Reliable Electrical<br>Systems with <span>VoltPartner</span></h1>
 		</div>
 		<a href="#" data-scroll="#about" class="scroll-bottom">
 			<img src="img/arrow_down.png" alt="">
@@ -79,24 +79,23 @@
 		<div class="container">
 			<div class="clearfix">
 				<div class="wide-column left">
-					<h2>КТО МЫ ТАКИЕ?</h2>
-					<p class="sub-heading">Чем мы занимаемся?</p>
+					<h2>WHO WE ARE?</h2>
+					<p class="sub-heading">WHAT ARE WE DOING?</p>
 					<p class="white-color">
-						Компания VoltPartner – команда опытных специалистов, выполняющих электромонтажные работы
-						на территории Таллинна, и всей Эстонии. Мы прикладываем немало усилий и используем
-						новейшие технологии, чтобы облегчить вашу жизнь, сделав её проще, удобнее и безопаснее.
-						Наши профессионалы – это высококвалифицированные инженеры-электрики, за плечами которых
-						большое количество выполненных проектов.
+						&quot;VoltPartner OU&quot; provides a full range of electrical installation works in Tallinn and Estonia. The range of
+						services includes: design works, wiring, video surveillance, access control, alarm and ‘smart home’ systems for
+						residential buildings, apartments, as well as industrial premises and offices.
+						Our goal is to make your life more convenient and safer, thanks to our experience and latest technologies.
 					</p>
 					<!-- <img src="img/cable.svg" class="cable" alt="cable"> -->
 				</div>
 				<div class="aside-column right">
 					<p class="white-color">
-						Благодаря многолетнему опыту и наличию всех необходимых инструментов и оборудования
-						специалисты компании VoltPartner берутся за проекты любой сложности, выполняя их на 100 %!
-						Мы сделаем работу даже тогда, когда другие электрики вам отказали. Мы решаем поставленные
-						перед нами задачи с максимальной ответственностью, соблюдая требования действующих
-						нормативных документов.
+						VoltPartner is actively developing in electrical engineering field. We professionally and qualitatively carry out
+						projects, as our work is a guarantee for your safety. All electrical work carried out using the most modern
+						solutions and in accordance with current regulation document requirements.
+						Work is carried out by highly professional electrical engineers with more than ten years experience. Therefore,
+						we can guarantee that works installed by our specialists will serve you reliably for a long time.
 					</p>
 				</div>
 			</div>
@@ -105,74 +104,53 @@
 					<div>
 						<img src="img/kvaliteet_icon.png" alt="Kvaliteet">
 						<span>
-							Работы осуществляются в соответствии с правилами и документации
-							<!-- Tööd valmistatakse
-							vastavalt reeglitele ja
-							dokumentatsioonile -->
+							Work is carried out in accordance with rules and allowance
 						</span>
 					</div>
 					<div>
 						<img src="img/turvalisus_icon.png" alt="Turvalisus">
 						<span>
-							Работы проделанная нашим специалистом прослужит вам долгое время
-							<!-- Spetsialistide poolt
-							tehtud tööd teenivad
-							Teile usaldusväärselt
-							ning pikka aega -->
+							Work that's done by our employee will last you long
 						</span>
 					</div>
 					<div>
 						<img src="img/kogemus_icon.png" alt="Kogemus">
 						<span>
-							Высокая квалификация наших специалистов позволяет осуществлять работу разного уровня сложности
-							<!-- Meie spetsialistide
-							kõrge kvalifikatsioon
-							võimaldab teostada
-							erinevate
-							raskustasemete töid. -->
+							Employees high qualification allows to carry out any complexity work
 						</span>
 					</div>
 					<div>
 						<img src="img/mugavaeg_icon.png" alt="Mugav aeg">
 						<span>
-							Наши специалисты работают в удобное вам время
-							<!-- Meie spetsalistid
-							töötavad Teile
-							mugavaimal ajal -->
+							Our experts will work at convenient time for you
 						</span>
 					</div>
 					<div>
 						<img src="img/garantii_icon.png" alt="Garantii">
 						<span>
-							Гарантия на проделанные работы начиная с 2 лет
-							<!-- Garantii tehtud
-							töödele alates 2
-							aastast -->
+							Warranty from 2 years for our services
 						</span>
 					</div>
 					<div>
 						<img src="img/head_pakkumised_icon.png" alt="Head pakkumised">
 						<span>
-							Бесплатный вызов специалиста для оценки сложных работ
-							<!-- Tasuta spetsialisti
-							kutsung hindamaks
-							raskeid töid -->
+							Free visit for evaluation complex works
 						</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<?php include 'partials/services_ru.php' ?>
+	<?php include 'partials/services_en.php' ?>
 	<section class="volt--contact mh100" id="contact">
 		<div class="container mt-15 clearfix">
 				<img width="220px" src="img/logo.svg" class="left" alt="VoltPartner">
 				<div class="form right">
 					<div id="response"></div>
 					<form action="mail.php" method="POST" id="email-form">
-						<input type="email" name="email" placeholder="Эл. почта"><br>
-						<input type="text" name="name" placeholder="Имя"><br>
-						<textarea name="text" id="" cols="30" rows="10" placeholder="Сообщение"></textarea><br>
+						<input type="email" name="email" placeholder="Email"><br>
+						<input type="text" name="name" placeholder="Name"><br>
+						<textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
 						<input type="submit" value="Отправить">
 						<img src="img/loading.gif" alt="" class="form-loader">
 					</form>

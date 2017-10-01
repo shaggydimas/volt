@@ -4,6 +4,9 @@ body {
 
 .mh100 {
   min-height: 100vh; }
+  @media (max-height: 400px) {
+    .mh100 {
+      min-height: 490px; } }
 
 p {
   line-height: 1.5; }
@@ -134,6 +137,9 @@ p {
   bottom: 100px;
   z-index: 100;
   animation: bounce 1s infinite; }
+  @media (max-width: 700px) {
+    .scroll-bottom {
+      bottom: 30px; } }
 
 .main-nav {
   position: absolute;
@@ -142,17 +148,32 @@ p {
   width: 100%;
   z-index: 101; }
   .main-nav nav {
+    position: relative;
     padding: 20px;
     border-bottom: 1px solid #f37120;
     text-align: center; }
     .main-nav nav .logo {
       float: left; }
+      @media (min-width: 781px) {
+        .main-nav nav .logo {
+          position: absolute;
+          left: 10px;
+          top: 15px; } }
       .main-nav nav .logo a {
         display: block; }
+    .main-nav nav .social-header {
+      position: absolute;
+      top: calc(50% - 19px);
+      right: 10px; }
+      .main-nav nav .social-header a {
+        display: inline-block; }
+      @media (max-width: 780px) {
+        .main-nav nav .social-header {
+          left: calc(50% - 37.5px);
+          right: auto; } }
     .main-nav nav > ul {
       display: inline-block;
-      margin-top: 5px;
-      margin-left: -90px; }
+      margin-top: 5px; }
       @media (max-width: 780px) {
         .main-nav nav > ul {
           display: none; } }
@@ -176,7 +197,7 @@ p {
         display: none;
         position: absolute;
         top: 100%;
-        left: -50%;
+        left: 0;
         background: rgba(0, 0, 0, 0.7);
         border-radius: 4px; }
         .main-nav nav > ul .dropdown:hover {
@@ -413,6 +434,10 @@ p {
       border-radius: 2px;
       border: none;
       padding: 0 8px; }
+    .volt--contact form ::-webkit-input-placeholder {
+      color: #333; }
+    .volt--contact form :-moz-placeholder {
+      color: #333; }
     .volt--contact form textarea {
       padding-top: 6px;
       background: rgba(255, 255, 255, 0.5);

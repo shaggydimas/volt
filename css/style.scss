@@ -5,6 +5,9 @@ body {
 }
 .mh100 {
 	min-height: 100vh;
+	@media(max-height: 400px) {
+		min-height: 490px;
+	}
 }
 p {
 	line-height: 1.5;
@@ -153,6 +156,9 @@ p {
 	bottom: 100px;
 	z-index: 100;
 	animation: bounce 1s infinite;
+	@media(max-width: 700px) {
+		bottom: 30px;
+	}
 }
 .main-nav {
 	position: absolute;
@@ -161,19 +167,36 @@ p {
 	width: 100%;
 	z-index: 101;
 	nav {
+		position: relative;
 		padding: 20px;
 		border-bottom: 1px solid $orange;
 		text-align: center;
 		.logo {
 			float: left;
+			@media(min-width: 781px) {
+				position: absolute;
+				left: 10px;
+				top: 15px;
+			}
 			a {
 				display: block;
+			}
+		}
+		.social-header {
+			position: absolute;
+			top: calc(50% - 19px);
+			right: 10px;
+			a {
+				display: inline-block;
+			}
+			@media(max-width: 780px) {
+				left: calc(50% - 37.5px);
+				right: auto;
 			}
 		}
 		> ul {
 			display: inline-block;
 			margin-top: 5px;
-			margin-left: -90px;
 			@media(max-width: 780px){
 				display: none;
 			}
@@ -205,7 +228,7 @@ p {
 				display: none;
 				position: absolute;
 				top: 100%;
-				left: -50%;
+				left: 0;
 				background: rgba(0,0,0,.7);
 				border-radius: 4px;
 				&:hover {
@@ -507,6 +530,12 @@ p {
 				border-radius: 2px;
 				border: none;
 				padding: 0 8px;
+			}
+			::-webkit-input-placeholder {
+				color: #333;
+			}
+			:-moz-placeholder {
+				color: #333;
 			}
 			textarea {
 				padding-top: 6px;
