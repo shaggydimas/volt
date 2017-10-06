@@ -157,7 +157,7 @@ p {
       @media (min-width: 781px) {
         .main-nav nav .logo {
           position: absolute;
-          left: 10px;
+          left: 15px;
           top: 15px; } }
       .main-nav nav .logo a {
         display: block; }

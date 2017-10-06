@@ -9,32 +9,16 @@
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css?v=<?php echo rand(); ?>">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/owl.css">
 </head>
 
 <body>
-	<div id="loader">
-		      <div class="sk-circle">
-        <div class="sk-circle1 sk-child"></div>
-        <div class="sk-circle2 sk-child"></div>
-        <div class="sk-circle3 sk-child"></div>
-        <div class="sk-circle4 sk-child"></div>
-        <div class="sk-circle5 sk-child"></div>
-        <div class="sk-circle6 sk-child"></div>
-        <div class="sk-circle7 sk-child"></div>
-        <div class="sk-circle8 sk-child"></div>
-        <div class="sk-circle9 sk-child"></div>
-        <div class="sk-circle10 sk-child"></div>
-        <div class="sk-circle11 sk-child"></div>
-        <div class="sk-circle12 sk-child"></div>
-      </div>
-	</div>
 	<a href="#" class="burger-btn"><span></span></a>
 	<div class="mobile-menu">
 		<ul>
 			<li><a href="#" data-scroll="#about">MEIST</a></li>
-			<li><a href="#" data-scroll="#services">TEENUSED</a></li>
+			<li><a href="javascript:void(0)">TEENUSED</a></li>
 			<li><a href="#">TEHTUD TÖÖD</a></li>
 			<li><a href="#" data-scroll="#contact">KONTAKT</a></li>
 		</ul>
@@ -57,6 +41,7 @@
 						<li><a href="#" data-scroll="#services" data-item="2">Juurdepääsu kontroll</a></li>
 						<li><a href="#" data-scroll="#services" data-item="3">Signalisatsioon</a></li>
 						<li><a href="#" data-scroll="#services" data-item="4">Projekteerimine</a></li>
+						<li><a href="#" data-scroll="#services" data-item="5">Tark maja süsteemid</a></li>
 					</ul>
 				</li>
 				<li><a href="#">TEHTUD TÖÖD</a></li>
@@ -70,7 +55,7 @@
 			<video id="video" src="video_tln.mp4" autoplay loop></video>
 		</div>
 		<div class="above-video">
-			<h1>Usaldusväärsed süsteemid<br><span>VoltPartneriga.</span></h1>
+			<h1>Usaldusväärsed<br><span>elektri</span>süsteemid<br>VoltPartneriga.</h1>
 		</div>
 		<a href="#" data-scroll="#about" class="scroll-bottom">
 			<img src="img/arrow_down.png" alt="">
@@ -173,69 +158,7 @@
 				</div>
 		</div>
 	</section>
-	<footer>
-		<div class="container clearfix">
-			<div class="left footer-logo">
-				<img style="margin-right: 6px;" width="90px" src="img/logo.svg" class="" alt="VoltPartner">
-				<span class="company" style="color: #fff; font-size: 11px;line-height: 1.3; display: inline-block;">
-					Volt Partner OÜ<br>
-					registrikood: 14232151<br>
-					Pirita tee 124/12,<br>
-					Tallinn 740129, Harjumaa
-				</span>
-			</div>
-			<div class="right">
-				<span class="left kontakt" style="color: #fff;">
-					Email: voltpartner@info.ee<br>
-					Tel: +372 6855 1324<br>
-					Mob: +372 55 68 1314
-				</span>
-				<div class="social right">
-					<a href="https://www.instagram.com/voltpartner/?hl=ru" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
-					<a href="https://www.facebook.com/Voltpartner-O%C3%9C-125441428113099/" target="_blank"><img src="img/fb.png" alt="Facebook"></a>
-				</div>
-				<div class="desktop-version">
-					<a href="/?desktop=true" style="display: inline-block; color: #fff; margin-top: 20px;">Desktop version</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script>
-	var video = document.getElementById('video');
-	var loader = document.getElementById('loader');
-	var x = setInterval(function(){
-		if ( video.readyState === 4 ) {
-			loader.classList.add('hidden');
-			clearInterval(x);
-		}
-	}, 200);
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/minified.js?v=1"></script>
-	<script src="js/owl.js"></script>
-	<script>
-		$('.owl-carousel').owlCarousel({
-			loop:false,
-			margin:10,
-			nav:false,
-			responsive:{
-				0:{
-					items:1
-				}
-			},
-			onDragged: function(event){
-				var data = $('.owl-item.active').find('.accordion').attr('data-img');
-				if(window.innerWidth < 700){
-					data = 'mobile/'+data; 
-				}
-				$('.volt--services').css({
-					'background':'url(img/'+data+')',
-					'background-size':'cover',
-					'background-repeat':'no-repeat',
-					'background-position':'center top'
-				});
-			}
-		});
-	</script>
+	<?php include 'footer.php'; ?>
+	<?php include 'partials/scripts.php'; ?>
 </body>
 </html>

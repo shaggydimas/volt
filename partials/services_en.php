@@ -50,7 +50,7 @@ $items = array(
 		],
 		'Design' => [
 			'projekteerimine.jpg',
-			[	'Electrical system design',
+			[		'Electrical system design',
 				'Low voltage system design']
 		]
 );

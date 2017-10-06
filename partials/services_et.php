@@ -288,7 +288,22 @@ normatiividele.
 						<p>Elektriprojekteerimine</p>
 					</div>
 					<div class="item">
-						<p>Madalpinge süsteemide projekteerimine</p>
+						<p>Nõrkvoolu projekteerimine</p>
+					</div>
+				</div>
+				<div class="accordion" data-img="signalisatsioon.jpg">
+					<header>Tark maja süsteemid</header>
+					<div class="item">
+						<p>Valgussüsteem</p>
+					</div>
+					<div class="item">
+						<p>Multimeedia</p>
+					</div>
+					<div class="item">
+						<p>Kliimaseade</p>
+					</div>
+					<div class="item">
+						<p>Elektriajamiga juhtimine</p>
 					</div>
 				</div>
 			</div>

@@ -31,13 +31,6 @@ $(function(){
 			]);
 	}
 	
-	$('.owl-item').on('mouseover',function(e){
-		$('.owl-item').removeClass('active-orange');
-		$(this).addClass('active-orange');
-		//var data = $(this).find('[data-background]').attr('data-background');
-		//services.css('background-image','url('+data+')');
-
-	});
 	scrollLinks.on('click',function(e){
 		e.preventDefault();
 		var href = $(this).attr('data-scroll');
@@ -48,14 +41,10 @@ $(function(){
 	win.on('scroll',function(e){
 		if(win.scrollTop() > infoGraphic.offset().top - win.height() + 100){
 			$('.info-graphic > div').each(function(index,v){
-				(function(that,i){
-					setTimeout(function(){
-						that.css({
-							opacity: "1",
-							transform: "translateY(0)"
-						});
-					}, 60 * index);
-				})($(this), index);
+				$(this).css({
+					opacity: "1",
+					transform: "translateY(0)"					
+				});
 			});
 		}
 	})

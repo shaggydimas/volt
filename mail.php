@@ -1,6 +1,6 @@
 <?php 
 	$from = $_POST['email'];
-	$to = "voltpartner@info.ee";
+	$to = "info@voltpartner.ee";
 	$name = $_POST['name'];
 	$msg = $_POST['text'];
 	$params = [$from, $to, $name, $msg];
