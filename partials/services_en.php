@@ -52,6 +52,15 @@ $items = array(
 			'projekteerimine.jpg',
 			[		'Electrical system design',
 				'Low voltage system design']
+		],
+		'Smart house systems' => [
+			'signalisatsioon.jpg',
+			[
+				'Lighting system',
+				'Multimedia',
+				'Climate control',
+				'Electric drive control'
+			]
 		]
 );
 ?>

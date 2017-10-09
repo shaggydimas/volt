@@ -9,7 +9,7 @@
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
 	<link rel="stylesheet" href="css/owl.css">
 </head>
 

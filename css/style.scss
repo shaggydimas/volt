@@ -123,6 +123,10 @@ p {
 		color: $orange;
 		display: inline-block !important;
 		font-weight: bold;
+		&.active {
+			text-decoration: none;
+			color: #fff;
+		}
 	}
 }
 .left {
@@ -225,12 +229,16 @@ p {
 				}
 			}
 			.dropdown {
+				width: 300px;
 				display: none;
 				position: absolute;
 				top: 100%;
 				left: 0;
 				background: rgba(0,0,0,.7);
 				border-radius: 4px;
+				li {
+					display: block !important;
+				}
 				&:hover {
 					display: block;
 				}

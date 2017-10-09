@@ -105,6 +105,9 @@ p {
     color: #f37120;
     display: inline-block !important;
     font-weight: bold; }
+    .langs a.active {
+      text-decoration: none;
+      color: #fff; }
 
 .left {
   float: left; }
@@ -157,7 +160,7 @@ p {
       @media (min-width: 781px) {
         .main-nav nav .logo {
           position: absolute;
-          left: 15px;
+          left: 10px;
           top: 15px; } }
       .main-nav nav .logo a {
         display: block; }
@@ -194,12 +197,15 @@ p {
             background: yellow;
             color: black; }
       .main-nav nav > ul .dropdown {
+        width: 300px;
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         background: rgba(0, 0, 0, 0.7);
         border-radius: 4px; }
+        .main-nav nav > ul .dropdown li {
+          display: block !important; }
         .main-nav nav > ul .dropdown:hover {
           display: block; }
         .main-nav nav > ul .dropdown a:hover {
