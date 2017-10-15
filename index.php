@@ -27,9 +27,9 @@
 		<nav class="clearfix">
 			<div class="logo">
 				<a href="/">
-					<img width="80px" src="img/logo.svg" alt="VoltPartner">
+					<img src="img/logo.svg" alt="VoltPartner">
 				</a>
-				<?php include 'partials/nav_langs.php' ?>
+				<?php include 'partials/nav_langs.php'; ?>
 			</div>
 			<ul>
 				<li><a href="#" data-scroll="#about">MEIST</a></li>
@@ -149,6 +149,7 @@
 				<div class="form right">
 					<div id="response"></div>
 					<form action="mail.php" method="POST" id="email-form">
+						<p class="white-color"><b style="font-size: 23px;">Võtta meiega ühendust</b></p> <br><br>
 						<input type="email" name="email" placeholder="email"><br>
 						<input type="text" name="name" placeholder="Nimi"><br>
 						<textarea name="text" id="" cols="30" rows="10" placeholder="Sõnum"></textarea><br>

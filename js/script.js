@@ -19,7 +19,8 @@ $(function(){
 			'img/cameras.jpg',
 			'img/juurdepaasukontroll.jpg',
 			'img/projekteerimine.jpg',
-			'img/signalisatsioon.jpg'
+			'img/signalisatsioon.jpg',
+			'img/tarkmaja.jpg'
 			]);
 	}
 	else {
@@ -27,7 +28,8 @@ $(function(){
 			'img/mobile/cameras.jpg',
 			'img/mobile/juurdepaasukontroll.jpg',
 			'img/mobile/projekteerimine.jpg',
-			'img/mobile/signalisatsioon.jpg'
+			'img/mobile/signalisatsioon.jpg',
+			'img/mobile/tarkmaja.jpg'
 			]);
 	}
 	

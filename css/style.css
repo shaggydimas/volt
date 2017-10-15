@@ -157,19 +157,32 @@ p {
     text-align: center; }
     .main-nav nav .logo {
       float: left; }
+      .main-nav nav .logo .langs {
+        display: none; }
       @media (min-width: 781px) {
         .main-nav nav .logo {
           position: absolute;
           left: 10px;
           top: 15px; } }
-      .main-nav nav .logo a {
+      .main-nav nav .logo > a {
         display: block; }
+        .main-nav nav .logo > a img {
+          width: 120px; }
+          @media (max-width: 1160px) {
+            .main-nav nav .logo > a img {
+              width: 80px; } }
+      @media (max-width: 1160px) {
+        .main-nav nav .logo .langs {
+          display: block; } }
     .main-nav nav .social-header {
       position: absolute;
       top: calc(50% - 19px);
       right: 10px; }
       .main-nav nav .social-header a {
         display: inline-block; }
+      @media (max-width: 1160px) {
+        .main-nav nav .social-header .langs-and-info {
+          display: none; } }
       @media (max-width: 780px) {
         .main-nav nav .social-header {
           left: calc(50% - 37.5px);

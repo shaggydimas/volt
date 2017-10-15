@@ -54,7 +54,7 @@ $items = array(
 				'Low voltage system design']
 		],
 		'Smart house systems' => [
-			'signalisatsioon.jpg',
+			'tarkmaja.jpg',
 			[
 				'Lighting system',
 				'Multimedia',

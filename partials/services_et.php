@@ -291,7 +291,7 @@ normatiividele.
 						<p>Nõrkvoolu projekteerimine</p>
 					</div>
 				</div>
-				<div class="accordion" data-img="signalisatsioon.jpg">
+				<div class="accordion" data-img="tarkmaja.jpg">
 					<header>Tark maja süsteemid</header>
 					<div class="item">
 						<p>Valgussüsteem</p>

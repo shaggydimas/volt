@@ -26,7 +26,7 @@
 		<nav class="clearfix">
 			<div class="logo">
 				<a href="/">
-					<img width="80px" src="img/logo.svg" alt="VoltPartner">
+					<img src="img/logo.svg" alt="VoltPartner">
 				</a>
 				<?php include 'partials/nav_langs.php' ?>
 			</div>
@@ -133,6 +133,7 @@
 				<div class="form right">
 					<div id="response"></div>
 					<form action="mail.php" method="POST" id="email-form">
+						<p class="white-color"><b style="font-size: 23px;">Contact us</b></p> <br><br>
 						<input type="email" name="email" placeholder="Email"><br>
 						<input type="text" name="name" placeholder="Name"><br>
 						<textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
