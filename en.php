@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php } ?>
 	<title>VoltPartner</title>
+	<link rel="icon" href="img/favicon.png">
+	<?php include 'partials/ga.php' ?>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
@@ -85,44 +87,7 @@
 				</div>
 			</div>
 			<div class="full-column clear-both">
-				<div class="info-graphic">
-					<div>
-						<img src="img/kvaliteet_icon.png" alt="Kvaliteet">
-						<span>
-							Work is carried out in accordance with rules and allowance
-						</span>
-					</div>
-					<div>
-						<img src="img/turvalisus_icon.png" alt="Turvalisus">
-						<span>
-							Work that's done by our employee will last you long
-						</span>
-					</div>
-					<div>
-						<img src="img/kogemus_icon.png" alt="Kogemus">
-						<span>
-							Employees high qualification allows to carry out any complexity work
-						</span>
-					</div>
-					<div>
-						<img src="img/mugavaeg_icon.png" alt="Mugav aeg">
-						<span>
-							Our experts will work at convenient time for you
-						</span>
-					</div>
-					<div>
-						<img src="img/garantii_icon.png" alt="Garantii">
-						<span>
-							Warranty from 2 years for our services
-						</span>
-					</div>
-					<div>
-						<img src="img/head_pakkumised_icon.png" alt="Head pakkumised">
-						<span>
-							Free visit for evaluation complex works
-						</span>
-					</div>
-				</div>
+				<?php include 'partials/info_graphic.php'; ?>
 			</div>
 		</div>
 	</section>

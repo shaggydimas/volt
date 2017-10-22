@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php } ?>
 	<title>VoltPartner</title>
+	<link rel="icon" href="img/favicon.png">
+	<?php include 'partials/ga.php' ?>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
@@ -86,65 +88,7 @@
 				</div>
 			</div>
 			<div class="full-column clear-both">
-				<div class="info-graphic">
-					<div>
-						<img src="img/kvaliteet_icon.png" alt="Kvaliteet">
-						<span>
-							Работы осуществляются в соответствии с правилами и документации
-							<!-- Tööd valmistatakse
-							vastavalt reeglitele ja
-							dokumentatsioonile -->
-						</span>
-					</div>
-					<div>
-						<img src="img/turvalisus_icon.png" alt="Turvalisus">
-						<span>
-							Работы проделанная нашим специалистом прослужит вам долгое время
-							<!-- Spetsialistide poolt
-							tehtud tööd teenivad
-							Teile usaldusväärselt
-							ning pikka aega -->
-						</span>
-					</div>
-					<div>
-						<img src="img/kogemus_icon.png" alt="Kogemus">
-						<span>
-							Высокая квалификация наших специалистов позволяет осуществлять работу разного уровня сложности
-							<!-- Meie spetsialistide
-							kõrge kvalifikatsioon
-							võimaldab teostada
-							erinevate
-							raskustasemete töid. -->
-						</span>
-					</div>
-					<div>
-						<img src="img/mugavaeg_icon.png" alt="Mugav aeg">
-						<span>
-							Наши специалисты работают в удобное вам время
-							<!-- Meie spetsalistid
-							töötavad Teile
-							mugavaimal ajal -->
-						</span>
-					</div>
-					<div>
-						<img src="img/garantii_icon.png" alt="Garantii">
-						<span>
-							Гарантия на проделанные работы начиная с 2 лет
-							<!-- Garantii tehtud
-							töödele alates 2
-							aastast -->
-						</span>
-					</div>
-					<div>
-						<img src="img/head_pakkumised_icon.png" alt="Head pakkumised">
-						<span>
-							Бесплатный вызов специалиста для оценки сложных работ
-							<!-- Tasuta spetsialisti
-							kutsung hindamaks
-							raskeid töid -->
-						</span>
-					</div>
-				</div>
+				<?php include 'partials/info_graphic.php'; ?>
 			</div>
 		</div>
 	</section>

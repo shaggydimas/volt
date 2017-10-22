@@ -1,5 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/minified.js?v=1"></script>
+<!-- <script src="js/script.js?v=<?php //echo rand(); ?>"></script> -->
+<script src="js/minified.js?v=<?php echo rand(); ?>"></script>
 <script src="js/owl.js"></script>
 <script>
 	$('.owl-carousel').owlCarousel({

@@ -7,8 +7,10 @@
 	<?php } ?>
 	<title>VoltPartner</title>
 	<link rel="icon" href="img/favicon.png">
+	<?php include 'partials/ga.php' ?>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<!-- <link rel="stylesheet" href="css/style.css?v=<?php //echo rand(); ?>"> -->
 	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
 	<link rel="stylesheet" href="css/owl.css">
 </head>
@@ -33,18 +35,37 @@
 			</div>
 			<ul>
 				<li><a href="#" data-scroll="#about">MEIST</a></li>
+				<li>
+					<a href="#" data-scroll="#services" data-item="0">
+						Elektritööd
+					</a>
+				</li>
 				<li class="dropdown-toggle">
-					<a href="#" data-scroll="#services">TEENUSED</a>
+					<a href="#" data-scroll="#services">
+						Nõrkvoolutood
+					</a>
 					<ul class="dropdown">
-						<li><a href="#" data-scroll="#services" data-item="0">Elektrisüsteemid</a></li>
 						<li><a href="#" data-scroll="#services" data-item="1">Videovalvesüsteemid</a></li>
 						<li><a href="#" data-scroll="#services" data-item="2">Juurdepääsu kontroll</a></li>
 						<li><a href="#" data-scroll="#services" data-item="3">Signalisatsioon</a></li>
-						<li><a href="#" data-scroll="#services" data-item="4">Projekteerimine</a></li>
 						<li><a href="#" data-scroll="#services" data-item="5">Tark maja süsteemid</a></li>
 					</ul>
 				</li>
-				<li><a href="#">TEHTUD TÖÖD</a></li>
+				<li>
+					<a href="#services" data-scroll="#services" data-item="4">Projekteerimine</a>
+				</li>
+				<li class="dropdown-toggle">
+					<a href="#">TEHTUD TÖÖD</a>
+					<ul class="dropdown">
+						<li>
+							<a href="https://www.instagram.com/voltpartner/?hl=ru" target="_blank">INSTAGRAM<span><img style="vertical-align: top; margin-left: 5px;" src="img/ig-icon.png" alt="Instagram" width="15px"></span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/Voltpartner-O%C3%9C-125441428113099/" target="_blank">FACEBOOK<span><img style="vertical-align: top; margin-left: 5px;" src="img/fb-icon.png" alt="Instagram" width="15px"></span></a>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#" data-scroll="#contact">KONTAKT</a></li>
 			</ul>
 			<?php include 'partials/social_headers.php' ?>
@@ -86,59 +107,7 @@
 				</div>
 			</div>
 			<div class="full-column clear-both">
-				<div class="info-graphic">
-					<div>
-						<img src="img/kvaliteet_icon.png" alt="Kvaliteet">
-						<span>
-							Tööd valmistatakse
-							vastavalt reeglitele ja
-							dokumentatsioonile
-						</span>
-					</div>
-					<div>
-						<img src="img/turvalisus_icon.png" alt="Turvalisus">
-						<span>
-							Spetsialistide poolt
-							tehtud tööd teenivad
-							Teile usaldusväärselt
-							ning pikka aega
-						</span>
-					</div>
-					<div>
-						<img src="img/kogemus_icon.png" alt="Kogemus">
-						<span>
-							Meie spetsialistide
-							kõrge kvalifikatsioon
-							võimaldab teostada
-							erinevate
-							raskustasemete töid.
-						</span>
-					</div>
-					<div>
-						<img src="img/mugavaeg_icon.png" alt="Mugav aeg">
-						<span>
-							Meie spetsalistid
-							töötavad Teile
-							mugavaimal ajal
-						</span>
-					</div>
-					<div>
-						<img src="img/garantii_icon.png" alt="Garantii">
-						<span>
-							Garantii tehtud
-							töödele alates 2
-							aastast
-						</span>
-					</div>
-					<div>
-						<img src="img/head_pakkumised_icon.png" alt="Head pakkumised">
-						<span>
-							Tasuta spetsialisti
-							kutsung hindamaks
-							raskeid töid
-						</span>
-					</div>
-				</div>
+				<?php include 'partials/info_graphic.php' ?>
 			</div>
 		</div>
 	</section>
@@ -149,8 +118,9 @@
 				<div class="form right">
 					<div id="response"></div>
 					<form action="mail.php" method="POST" id="email-form">
-						<p class="white-color"><b style="font-size: 23px;">Võtta meiega ühendust</b></p> <br><br>
+						<p class="white-color"><b style="font-size: 23px;">Võta meiega ühendust, et saada tasuta konsultatsioon</b></p> <br><br>
 						<input type="email" name="email" placeholder="email"><br>
+						<input type="text" name="phone" placeholder="Tel. number"><br>
 						<input type="text" name="name" placeholder="Nimi"><br>
 						<textarea name="text" id="" cols="30" rows="10" placeholder="Sõnum"></textarea><br>
 						<input type="submit" value="SAADA">
