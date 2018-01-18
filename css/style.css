@@ -41,7 +41,8 @@ p {
       display: block;
       padding: 20px 0;
       color: #fff;
-      font-size: 2em; }
+      font-size: 1.5em;
+      text-transform: uppercase; }
 
 .white-color {
   color: #fff; }
@@ -183,6 +184,8 @@ p {
       right: 10px; }
       .main-nav nav .social-header a {
         display: inline-block; }
+      .main-nav nav .social-header .langs-and-info {
+        font-size: 14px; }
       @media (max-width: 1160px) {
         .main-nav nav .social-header .langs-and-info {
           display: none; } }
@@ -215,7 +218,8 @@ p {
             background: yellow;
             color: black; }
       .main-nav nav > ul .dropdown {
-        width: 300px;
+        min-width: 230px;
+        max-width: 300px;
         display: none;
         position: absolute;
         text-align: center;
@@ -231,13 +235,12 @@ p {
           background: none;
           color: #fff; }
 
+.no-objectfit .video-wrapper #video {
+  height: auto !important; }
+
 .volt--top {
   overflow: hidden;
   position: relative; }
-  @media (min-width: 1100px) {
-    .volt--top {
-      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%); } }
   .volt--top .above-video, .volt--top .video-wrapper {
     position: absolute;
     top: 0;
@@ -246,12 +249,18 @@ p {
     height: 100%; }
   .volt--top .video-wrapper {
     z-index: 99; }
-    @media (max-width: 600px) {
-      .volt--top .video-wrapper #video {
-        width: 1300px; } }
-    @media (min-width: 1220px) {
-      .volt--top .video-wrapper #video {
-        width: 100%; } }
+    @media (max-width: 1024px) {
+      .volt--top .video-wrapper {
+        background-image: url(../img/mobile-bg.jpg);
+        background-size: cover;
+        background-position: center center; } }
+    .volt--top .video-wrapper #video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+      @media (max-width: 1024px) {
+        .volt--top .video-wrapper #video {
+          display: none; } }
   .volt--top .above-video {
     display: flex;
     align-items: center;
@@ -261,7 +270,7 @@ p {
       .volt--top .above-video {
         background: rgba(0, 0, 0, 0.3); } }
     .volt--top .above-video h1 {
-      font-size: 5em;
+      font-size: 4em;
       text-align: center;
       font-weight: bold;
       color: #fff;
@@ -274,6 +283,17 @@ p {
           font-size: 2.5em; } }
       .volt--top .above-video h1 span {
         color: #f37120; }
+      @media (min-width: 2200px) {
+        .volt--top .above-video h1 {
+          font-size: 5.5em; } }
+  .volt--top:before {
+    background: url(../img/overlay.png);
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    opacity: .2; }
 .volt--about {
   background-color: #464141;
   background-image: linear-gradient(0deg, #464141 25%, #333333 100%);
@@ -292,7 +312,8 @@ p {
   .volt--about .info-graphic {
     margin-top: 20px;
     text-align: center;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .volt--about .info-graphic.animated > div {
       opacity: 1;
       transform: translateY(0); }
@@ -306,6 +327,9 @@ p {
         transition-delay: .8s; }
       .volt--about .info-graphic.animated > div:nth-child(6) {
         transition-delay: 1s; }
+      @media (max-width: 900px) {
+        .volt--about .info-graphic.animated > div {
+          min-width: 33%; } }
     @media (max-width: 700px) {
       .volt--about .info-graphic {
         flex-direction: column; } }
@@ -401,6 +425,10 @@ p {
     align-items: center;
     cursor: pointer;
     z-index: 9995; }
+    @media (max-width: 600px) {
+      .volt--services .control-left, .volt--services .control-right {
+        background: rgba(255, 255, 255, 0.4);
+        padding: 0 5px; } }
     .volt--services .control-left:hover, .volt--services .control-right:hover {
       color: #fff; }
   .volt--services .control-left {
@@ -451,6 +479,7 @@ p {
   overflow: hidden;
   background: url(../img/contact.jpg);
   background-size: cover;
+  background-position: center center;
   padding-bottom: 30px; }
   .volt--contact .container.mt-15 {
     margin-top: 15%; }

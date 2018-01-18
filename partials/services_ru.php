@@ -56,7 +56,7 @@ $items = array(
 			'Проектирование слаботочных систем']
 		],
 		'Система умный дом' => [
-			'tarkmaja.jpg',
+			'tarkmaja2.jpg',
 			['Система освещения','Мультимедия','Климат контроль','Управление электроприводом']
 		]
 );
@@ -215,7 +215,7 @@ $items = array(
 					for($x = 0; $x < count($arr[1]); $x++) {
 						if(count($arr[1]) > 10) {
 							if($x === 10){
-								echo '<a href="javascript:void(0)" class="showMoreBtn">Näita kõik</a>';
+								echo '<a href="javascript:void(0)" class="showMoreBtn">↓</a>';
 								echo '<div class="hidden-items">';
 								echo '<div class="item">';
 								echo '<p>'.$arr[1][$x].'</p>';

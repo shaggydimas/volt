@@ -1,26 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<?php if( !(isset($_GET['desktop']))) { ?>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php } ?>
-	<title>VoltPartner</title>
-	<link rel="icon" href="img/favicon.png">
-	<?php include 'partials/ga.php' ?>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
-	<link rel="stylesheet" href="css/owl.css">
-</head>
-
+<?php include 'header.php'; ?>
+<?php 
+//echo $row["main_text"];
+ ?>
 <body>
 	<a href="#" class="burger-btn"><span></span></a>
 	<div class="mobile-menu">
 		<ul>
 			<li><a href="#" data-scroll="#about">О НАС</a></li>
-			<li><a href="#" data-scroll="#services">УСЛУГИ</a></li>
-			<li><a href="#">РАБОТЫ</a></li>
+			<li><a href="#" data-scroll="#services" data-item="0">Электроработы</a></li>
+			<li><a href="#" data-scroll="#services" data-item="1">Система видеонаблюдения</a></li>
+			<li><a href="#" data-scroll="#services" data-item="2">Контроль доступа</a></li>
+			<li><a href="#" data-scroll="#services" data-item="2">Сигнализация</a></li>
+			<li><a href="#" data-scroll="#services" data-item="4">Система умный дом</a></li>
 			<li><a href="#" data-scroll="#contact">КОНТАКТ</a></li>
 		</ul>
 	</div>
@@ -34,18 +25,29 @@
 			</div>
 			<ul>
 				<li><a href="#" data-scroll="#about">О НАС</a></li>
+				<li><a href="#" data-scroll="#services" data-item="0">Электроработы</a></li>
 				<li class="dropdown-toggle">
-					<a href="#" data-scroll="#services">УСЛУГИ</a>
+					<a href="#" data-scroll="#services">Слаботочные системы</a>
 					<ul class="dropdown">
-						<li><a href="#" data-scroll="#services" data-item="0">Электротехнические работы</a></li>
 						<li><a href="#" data-scroll="#services" data-item="1">Система видеонаблюдения</a></li>
 						<li><a href="#" data-scroll="#services" data-item="2">Контроль доступа</a></li>
-						<li><a href="#" data-scroll="#services" data-item="3">Сигнализация</a></li>
-						<li><a href="#" data-scroll="#services" data-item="4">Проектирование</a></li>
-						<li><a href="#" data-scroll="#services" data-item="5">Система умный дом</a></li>
+						<li><a href="#" data-scroll="#services" data-item="2">Сигнализация</a></li>
+						<li><a href="#" data-scroll="#services" data-item="4">Система умный дом</a></li>
 					</ul>
 				</li>
-				<li><a href="#">РАБОТЫ</a></li>
+				<li><a href="#" data-scroll="#services" data-item="3">Проектирование</a></li>
+				<li class="dropdown-toggle">
+					<a href="#">РАБОТЫ</a>
+					<ul class="dropdown">
+						<li>
+							<a href="https://www.instagram.com/voltpartner/?hl=ru" target="_blank">INSTAGRAM<span><img style="vertical-align: top; margin-left: 5px;" src="img/ig-icon.png" alt="Instagram" width="15px"></span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/Voltpartner-O%C3%9C-125441428113099/" target="_blank">FACEBOOK<span><img style="vertical-align: top; margin-left: 5px;" src="img/fb-icon.png" alt="Instagram" width="15px"></span></a>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#" data-scroll="#contact">КОНТАКТ</a></li>
 			</ul>
 			<?php include 'partials/social_headers.php' ?>
@@ -53,10 +55,10 @@
 	</header>
 	<section class="volt--top mh100">
 		<div class="video-wrapper">
-			<video id="video" src="video_tln.mp4" autoplay loop></video>
+			<video id="video" src="500p.mp4" autoplay loop></video>
 		</div>
 		<div class="above-video">
-			<h1>Надёжные системы<br>вместе с <span>VoltPartner</span></h1>
+			<h1>Надёжные <span>электросистемы</span><br>вместе с VoltPartner</h1>
 		</div>
 		<a href="#" data-scroll="#about" class="scroll-bottom">
 			<img src="img/arrow_down.png" alt="">
@@ -66,14 +68,10 @@
 		<div class="container">
 			<div class="clearfix">
 				<div class="wide-column left">
-					<h2>КТО МЫ ТАКИЕ?</h2>
+					<h2>КТО МЫ?</h2>
 					<p class="sub-heading">Чем мы занимаемся?</p>
 					<p class="white-color">
-						Компания VoltPartner – команда опытных специалистов, выполняющих электромонтажные работы
-						на территории Таллинна, и всей Эстонии. Мы прикладываем немало усилий и используем
-						новейшие технологии, чтобы облегчить вашу жизнь, сделав её проще, удобнее и безопаснее.
-						Наши профессионалы – это высококвалифицированные инженеры-электрики, за плечами которых
-						большое количество выполненных проектов.
+						<?php echo $row["main_text"]; ?>
 					</p>
 					<!-- <img src="img/cable.svg" class="cable" alt="cable"> -->
 				</div>
@@ -99,9 +97,10 @@
 				<div class="form right">
 					<div id="response"></div>
 					<form action="mail.php" method="POST" id="email-form">
-						<p class="white-color"><b style="font-size: 23px;">Свяжитесь с нами</b></p> <br><br>
+						<p class="white-color"><b style="font-size: 23px;">Для бесплатной консультации, пишите нам.</b></p> <br><br>
 						<input type="email" name="email" placeholder="Эл. почта"><br>
 						<input type="text" name="name" placeholder="Имя"><br>
+						<input type="text" name="phone" placeholder="Тел. номер"><br>
 						<textarea name="text" id="" cols="30" rows="10" placeholder="Сообщение"></textarea><br>
 						<input type="submit" value="Отправить">
 						<img src="img/loading.gif" alt="" class="form-loader">

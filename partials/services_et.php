@@ -1,3 +1,8 @@
+<style>
+	.item p {
+		text-transform: capitalize;
+	}
+</style>
 <section class="volt--services mh100" id="services">
 		<div class="container">
 			<h3><b>TEENUS</b><span><b>ED</b></span></h3>
@@ -104,48 +109,51 @@ ka Teie vara oleks ohutud.
 							+
 						</span>
 					</div>
-					<div class="item">
-						<p>Valgustussüsteemide montaaž</p>
-						<div>
-							Pikaajalised uuringud tegid teatavaks, et valesti paigaldatud ning välja valitud valgustusseadmed
-võivad tugevalt mõjutada personali töövõimele. Aitame Teile valida välja õiged valgustusseadmed
-ning paigaldame need nii, et effektiivsemalt ära kasutada iga töötaja aega, säästes tervist ning
-pakkudes maksimaalselt komfortsed töötingimused.
+					<a href="javascript:void(0)" class="showMoreBtn">↓</a>
+					<div class="hidden-items">
+						<div class="item">
+							<p>Valgustussüsteemide montaaž</p>
+							<div>
+								Pikaajalised uuringud tegid teatavaks, et valesti paigaldatud ning välja valitud valgustusseadmed
+								võivad tugevalt mõjutada personali töövõimele. Aitame Teile valida välja õiged valgustusseadmed
+								ning paigaldame need nii, et effektiivsemalt ära kasutada iga töötaja aega, säästes tervist ning
+								pakkudes maksimaalselt komfortsed töötingimused.
+							</div>
+							<span class="hasText">
+								+
+							</span>
 						</div>
-						<span class="hasText">
-							+
-						</span>
-					</div>
-					<div class="item">
-						<p>Valgusdioodse valguse montaaž</p>
-						<div>LED prožektorid, LED laed, LED moodulid, interjööri valgus, LED hoone valgus</div>
-						<span class="hasText">
-							+
-						</span>
-					</div>
-					<div class="item">
-						<p>Kodutehnika paigaldus ja ühendus</p>
-						<div>
-							elektripliitide paigaldus ja ühendus
-integreeritud elektriahjude ühendus
-pesumasinate paigaldus ja ühendus
-nõudepesumasinate paigaldus
-köögikubu ühendus
-elektrilise veesoojendi ühendus
+						<div class="item">
+							<p>Valgusdioodse valguse montaaž</p>
+							<div>LED prožektorid, LED laed, LED moodulid, interjööri valgus, LED hoone valgus</div>
+							<span class="hasText">
+								+
+							</span>
 						</div>
-						<span class="hasText">
-							+
-						</span>
-					</div>
-					<div class="item">
-						<p>Sooja pörandasüsteemi paigaldus</p>
-						<div>
-							Valime välja just Teie kodule sobivaima süsteemi vastavalt Teie finantsvõimetele, erisoovidele ning
-normatiividele.
+						<div class="item">
+							<p>Kodutehnika paigaldus ja ühendus</p>
+							<div>
+								elektripliitide paigaldus ja ühendus
+								integreeritud elektriahjude ühendus
+								pesumasinate paigaldus ja ühendus
+								nõudepesumasinate paigaldus
+								köögikubu ühendus
+								elektrilise veesoojendi ühendus
+							</div>
+							<span class="hasText">
+								+
+							</span>
 						</div>
-						<span class="hasText">
-							+
-						</span>
+						<div class="item">
+							<p>Sooja pörandasüsteemi paigaldus</p>
+							<div>
+								Valime välja just Teie kodule sobivaima süsteemi vastavalt Teie finantsvõimetele, erisoovidele ning
+								normatiividele.
+							</div>
+							<span class="hasText">
+								+
+							</span>
+						</div>
 					</div>
 				</div>
 				<div class="accordion" data-img="cameras.jpg">
@@ -181,7 +189,7 @@ normatiividele.
 						<p>Online videovalve</p>
 					</div>
 				</div>
-				<div class="accordion" data-img="juurdepaasukontroll.jpg">
+				<div class="accordion" data-img="juurdepaasukontroll2.jpg">
 					<header>Juurdepääsu kontroll</header>
 					<div class="item">
 						<p>elektromagnetlukud</p>
@@ -213,17 +221,17 @@ normatiividele.
 					<div class="item">
 						<p>fonoluku paigaldus</p>
 					</div>
-					<div class="item">
-						<p>videofonoluku paigaldus</p>
-					</div>
-					<div class="item">
-						<p>fonolukude komplektid</p>
-					</div>
-					<div class="item">
-						<p>fonolukk videovalvega</p>
-					</div>
-					<a href="javascript:void(0)" class="showMoreBtn">Näita kõik</a>
+					<a href="javascript:void(0)" class="showMoreBtn">↓</a>
 					<div class="hidden-items">
+						<div class="item">
+							<p>videofonoluku paigaldus</p>
+						</div>
+						<div class="item">
+							<p>fonolukude komplektid</p>
+						</div>
+						<div class="item">
+							<p>fonolukk videovalvega</p>
+						</div>
 						<div class="item">
 							<p>juhtmevaba videofonolukk</p>
 						</div>
@@ -291,7 +299,7 @@ normatiividele.
 						<p>Nõrkvoolu projekteerimine</p>
 					</div>
 				</div>
-				<div class="accordion" data-img="tarkmaja.jpg">
+				<div class="accordion" data-img="tarkmaja2.jpg">
 					<header>Tark maja süsteemid</header>
 					<div class="item">
 						<p>Valgussüsteem</p>

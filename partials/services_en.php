@@ -13,9 +13,10 @@ $items = array(
 			'AHD video surveillance',
 			'Hidden cameras',
 			'Video Surveillance Online'
+		]
 		],
 		'Access control' => [
-		'juurdepaasukontroll.jpg',
+		'juurdepaasukontroll2.jpg',
 		['Electromagnetic locks',
 			'Ready-made kits',
 			'Code and with a card',
@@ -36,7 +37,6 @@ $items = array(
 			'Personnel time recording',
 			'Automatic gates',
 			'Gate automation']
-		]
 		],
 		'Alarms' => [
 			'signalisatsioon.jpg',
@@ -54,7 +54,7 @@ $items = array(
 				'Low voltage system design']
 		],
 		'Smart house systems' => [
-			'tarkmaja.jpg',
+			'tarkmaja2.jpg',
 			[
 				'Lighting system',
 				'Multimedia',
@@ -221,7 +221,7 @@ $items = array(
 					for($x = 0; $x < count($arr[1]); $x++) {
 						if(count($arr[1]) > 10) {
 							if($x === 10){
-								echo '<a href="javascript:void(0)" class="showMoreBtn">Näita kõik</a>';
+								echo '<a href="javascript:void(0)" class="showMoreBtn">↓</a>';
 								echo '<div class="hidden-items">';
 								echo '<div class="item">';
 								echo '<p>'.$arr[1][$x].'</p>';

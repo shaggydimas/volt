@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<?php if( !(isset($_GET['desktop']))) { ?>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php } ?>
-	<title>VoltPartner</title>
-	<link rel="icon" href="img/favicon.png">
-	<?php include 'partials/ga.php' ?>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<!-- <link rel="stylesheet" href="css/style.css?v=<?php //echo rand(); ?>"> -->
-	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
-	<link rel="stylesheet" href="css/owl.css">
-</head>
-
+<?php include 'header.php'; ?>
 <body>
 	<a href="#" class="burger-btn"><span></span></a>
 	<div class="mobile-menu">
 		<ul>
 			<li><a href="#" data-scroll="#about">MEIST</a></li>
-			<li><a href="javascript:void(0)">TEENUSED</a></li>
-			<li><a href="#">TEHTUD TÖÖD</a></li>
+			<li><a href="#" data-scroll="#services" data-item="0">ELEKTRITÖÖD</a></li>
+			<li><a href="#" data-scroll="#services" data-item="1">VIDEOVALVESÜSTEEMID</a></li>
+			<li><a href="#" data-scroll="#services" data-item="2">JUURDEPÄÄASU KONTROLL</a></li>
+			<li><a href="#" data-scroll="#services" data-item="3">SIGNALISATSIOON</a></li>
+			<li><a href="#" data-scroll="#services" data-item="5">TARK MAJA SÜSTEEMID</a></li>
 			<li><a href="#" data-scroll="#contact">KONTAKT</a></li>
 		</ul>
 	</div>
@@ -73,7 +60,7 @@
 	</header>
 	<section class="volt--top mh100">
 		<div class="video-wrapper">
-			<video id="video" src="video_tln.mp4" autoplay loop></video>
+			<video id="video" src="500p.mp4" autoplay loop></video>
 		</div>
 		<div class="above-video">
 			<h1>Usaldusväärsed<br><span>elektri</span>süsteemid<br>VoltPartneriga.</h1>
@@ -89,20 +76,13 @@
 					<h2>KES ME OLEME?</h2>
 					<p class="sub-heading">Mida me teeme?</p>
 					<p class="white-color">
-						"VoltPartner OÜ" tegeleb elektritöödega Tallinnas ning kogu Eestis. Teenuste alla
-						kuuluvad projektitööd, elektromontaaž, videovalve, juurdepääsu kontroll,
-						signalisatsioon ning "tark maja" süsteemid eramajadele, korteritele ning
-						tööstusruumidele kui ka kontoritele.
+						<?php echo $row["main_text"]; ?>
 					</p>
 					<!-- <img src="img/cable.svg" class="cable" alt="cable"> -->
 				</div>
 				<div class="aside-column right">
 					<p class="white-color">
-						Meie eesmärk on muuta Teie elu
-						turvalisemaks ja mugavamaks
-						tänu oma kogemusele ning
-						kaasaaegsetele
-						tehnoloogiatele.
+						<?php echo $row["side_text"]; ?>
 					</p>
 				</div>
 			</div>

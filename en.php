@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<?php if( !(isset($_GET['desktop']))) { ?>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php } ?>
-	<title>VoltPartner</title>
-	<link rel="icon" href="img/favicon.png">
-	<?php include 'partials/ga.php' ?>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/minified.css?v=<?php echo rand(); ?>">
-	<link rel="stylesheet" href="css/owl.css">
-</head>
-
+<?php include 'header.php'; ?>
 <body>
 	<a href="#" class="burger-btn"><span></span></a>
 	<div class="mobile-menu">
 		<ul>
 			<li><a href="#" data-scroll="#about">ABOUT US</a></li>
-			<li><a href="#" data-scroll="#services">SERVICES</a></li>
-			<li><a href="#">WORKS</a></li>
+			<li><a href="#" data-scroll="#services" data-item="0">ELECTRICAL WORKS</a></li>
+			<li><a href="#" data-scroll="#services" data-item="1">CCTV video surveillance</a></li>
+			<li><a href="#" data-scroll="#services" data-item="2">Access control</a></li>
+			<li><a href="#" data-scroll="#services" data-item="2">Alarms</a></li>
+			<li><a href="#" data-scroll="#services" data-item="4">Smart house systems</a></li>
 			<li><a href="#" data-scroll="#contact">CONTACT</a></li>
 		</ul>
 	</div>
@@ -34,18 +22,28 @@
 			</div>
 			<ul>
 				<li><a href="#" data-scroll="#about">ABOUT US</a></li>
+				<li><a href="#" data-scroll="#services" data-item="0">ELECTRICAL WORKS</a></li>
 				<li class="dropdown-toggle">
-					<a href="#" data-scroll="#services">SERVICES</a>
+					<a href="#" data-scroll="#services">security systems</a>
 					<ul class="dropdown">
-						<li><a href="#" data-scroll="#services" data-item="0">Electrical works</a></li>
 						<li><a href="#" data-scroll="#services" data-item="1">CCTV video surveillance</a></li>
 						<li><a href="#" data-scroll="#services" data-item="2">Access control</a></li>
 						<li><a href="#" data-scroll="#services" data-item="3">Alarms</a></li>
-						<li><a href="#" data-scroll="#services" data-item="4">Design</a></li>
 						<li><a href="#" data-scroll="#services" data-item="5">Smart house systems</a></li>
 					</ul>
 				</li>
-				<li><a href="#">WORKS</a></li>
+				<li><a href="#" data-scroll="#services" data-item="3">Design</a></li>
+				<li class="dropdown-toggle"><a href="#">WORKS</a>
+					<ul class="dropdown">
+						<li>
+							<a href="https://www.instagram.com/voltpartner/?hl=ru" target="_blank">INSTAGRAM<span><img style="vertical-align: top; margin-left: 5px;" src="img/ig-icon.png" alt="Instagram" width="15px"></span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/Voltpartner-O%C3%9C-125441428113099/" target="_blank">FACEBOOK<span><img style="vertical-align: top; margin-left: 5px;" src="img/fb-icon.png" alt="Instagram" width="15px"></span></a>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#" data-scroll="#contact">CONTACT</a></li>
 			</ul>
 			<?php include 'partials/social_headers.php' ?>
@@ -53,7 +51,7 @@
 	</header>
 	<section class="volt--top mh100">
 		<div class="video-wrapper">
-			<video id="video" src="video_tln.mp4" autoplay loop></video>
+			<video id="video" src="500p.mp4" autoplay loop></video>
 		</div>
 		<div class="above-video">
 			<h1>Reliable Electrical<br>Systems with <span>VoltPartner</span></h1>
@@ -98,9 +96,10 @@
 				<div class="form right">
 					<div id="response"></div>
 					<form action="mail.php" method="POST" id="email-form">
-						<p class="white-color"><b style="font-size: 23px;">Contact us</b></p> <br><br>
+						<p class="white-color"><b style="font-size: 23px;">Contact us for free consultation</b></p> <br><br>
 						<input type="email" name="email" placeholder="Email"><br>
 						<input type="text" name="name" placeholder="Name"><br>
+						<input type="text" name="phone" placeholder="Phone number"><br>
 						<textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
 						<input type="submit" value="Send">
 						<img src="img/loading.gif" alt="" class="form-loader">

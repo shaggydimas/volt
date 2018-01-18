@@ -1,19 +1,6 @@
 <footer>
 	<div class="container clearfix">
 		<div class="left footer-logo">
-			<p style="font-size: 12px; margin-bottom: 5px;">
-				<?php
-				if($_SERVER['REQUEST_URI'] === '/ru') {
-					echo 'Для бесплатной консультации, пишите нам';	
-				}
-				elseif($_SERVER['REQUEST_URI'] === '/en') {
-					echo 'Contact us for free consultation';
-				}
-				else {
-					echo 'Võta meiega ühendust, et saada tasuta konsultatsioon';
-				}
-				?>
-			</p>
 			<img style="margin-right: 6px;" width="90px" src="img/logo.svg" class="" alt="VoltPartner">
 			<span class="company" style="color: #fff; font-size: 11px;line-height: 1.3; display: inline-block;">
 				VoltPartner OÜ<br>

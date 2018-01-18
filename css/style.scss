@@ -45,7 +45,8 @@ p {
 				display: block;
 				padding: 20px 0;
 				color: #fff;
-				font-size: 2em;
+				font-size: 1.5em;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -211,6 +212,9 @@ p {
 			a {
 				display: inline-block;
 			}
+			.langs-and-info {
+				font-size: 14px;
+			}
 			@media(max-width: 1160px) {
 				.langs-and-info {
 					display: none;
@@ -254,7 +258,8 @@ p {
 				}
 			}
 			.dropdown {
-				width: 300px;
+				min-width: 230px;
+				max-width: 300px;
 				display: none;
 				position: absolute;
 				text-align: center;
@@ -278,14 +283,19 @@ p {
 		}
 	}
 }
+
+.no-objectfit {
+	.video-wrapper {
+		#video {
+			height: auto !important;
+		}
+	}
+}
+
 .volt-- {
 	&top {
 		overflow: hidden;
 		position: relative;
-		@media(min-width: 1100px){
-			-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
-			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
-		}
 		.above-video, .video-wrapper {
 			position: absolute;
 			top: 0;
@@ -295,13 +305,22 @@ p {
 		}
 		.video-wrapper {
 			z-index: 99;
+
+			@media(max-width: 1024px) {
+				background-image: url(../img/mobile-bg.jpg);
+				background-size: cover;
+				background-position: center center;
+			}
+
 			#video {
-				@media(max-width: 600px){
-					width: 1300px;
+				object-fit: cover;
+				width:100%;
+				height:100%;
+
+				@media(max-width: 1024px) {
+					display: none;
 				}
-				@media(min-width: 1220px){
-					width: 100%;
-				}
+
 			}
 		}
 		.above-video {
@@ -313,7 +332,7 @@ p {
 				background: rgba(0,0,0,.3);
 			}
 			h1 {
-				font-size: 5em;
+				font-size: 4em;
 				text-align: center;
 				font-weight: bold;
 				color: #fff;
@@ -327,7 +346,19 @@ p {
 				span {
 					color: $orange;
 				}
+				@media(min-width: 2200px) {
+					font-size: 5.5em;
+				}
 			}
+		}
+		&:before {
+			background: url(../img/overlay.png);
+			content:'';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: 100;
+			opacity: .2;
 		}
 	}
 	&about {
@@ -372,11 +403,15 @@ p {
 					&:nth-child(6) {
 						transition-delay: 1s;
 					}
+					@media(max-width: 900px) {
+						min-width: 33%;
+					}
 				}
 			}
 			margin-top: 20px;
 			text-align: center;
 			display: flex;
+			flex-wrap: wrap;
 			@media(max-width: 700px){
 				flex-direction: column;
 			}
@@ -491,6 +526,10 @@ p {
 			align-items: center;
 			cursor: pointer;
 			z-index: 9995;
+			@media(max-width: 600px) {
+				background: rgba(255,255,255,.4);
+				padding: 0 5px;
+			}
 			&:hover {
 				color: #fff;
 			}
@@ -561,6 +600,7 @@ p {
 		overflow: hidden;
 		background: url(../img/contact.jpg);
 		background-size: cover;
+		background-position: center center;
 		padding-bottom: 30px;
 		.container {
 			&.mt-15 {

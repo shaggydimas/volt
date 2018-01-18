@@ -8,30 +8,6 @@ $(function(){
 	var form = $('#email-form');
 	var formLoader = $('.form-loader');
 	var infoGraphic = $('.info-graphic');
-
-	function preload(arrayOfImages) {
-		$(arrayOfImages).each(function(){
-			$('<img/>')[0].src = this;
-		});
-	}
-	if(window.innerWidth > 700){
-		preload([
-			'img/cameras.jpg',
-			'img/juurdepaasukontroll.jpg',
-			'img/projekteerimine.jpg',
-			'img/signalisatsioon.jpg',
-			'img/tarkmaja.jpg'
-			]);
-	}
-	else {
-		preload([
-			'img/mobile/cameras.jpg',
-			'img/mobile/juurdepaasukontroll.jpg',
-			'img/mobile/projekteerimine.jpg',
-			'img/mobile/signalisatsioon.jpg',
-			'img/mobile/tarkmaja.jpg'
-			]);
-	}
 	
 	scrollLinks.on('click',function(e){
 		e.preventDefault();
@@ -86,7 +62,7 @@ $(function(){
 		lastSelected = el;
 	});
 	function goTo(count){
-
+		console.log(count, lastSelected);
 		if(lastSelected > count){
 			var res = lastSelected - count;
 			for(var i = 0; i < res; i++) {
@@ -94,7 +70,8 @@ $(function(){
 			}
 		}
 		else {
-			for(var i = 0; i < count; i++) {
+			var res = count - lastSelected;
+			for(var i = 0; i < res; i++) {
 				owl.trigger('next.owl.carousel');
 			}
 		}
@@ -107,8 +84,8 @@ $(function(){
 		textDiv.next('.hasText').text(val);
 	});
 	$('.showMoreBtn').on('click', function(){
-		var val = $(this).text() === "Näita kõik" ? "Peida" : "Näita kõik";
+		var val = $(this).text() === "↓" ? "↑" : "↓";
 		$(this).next('.hidden-items').slideToggle();
-		$(this).text(val);
+		$(this).html(val);
 	})
 });
