@@ -16,7 +16,25 @@
 			</div>
 			<div class="owl-carousel" id="owl">
 			<!-- owl end -->
-				<div class="accordion" data-img="services.jpg">
+			<?php foreach ($services_rows as &$sr) { ?>
+			<div class="accordion" data-img="signalisatsioon.jpg">
+				<header><?php echo $sr['label']; ?></header>
+				<?php if(count($sr['items']) > 10) { ?>
+					<?php foreach($sr['items'] as $key=>$item) { ?>
+					<div class="item">
+						<p><?php echo $item['caption']; ?></p>
+						<?php if($item['description'] !== NULL && !empty($item['description']) ) { ?>
+						<div><?php echo $item['description']; ?></div>
+						<span class="hasText">
+							+
+						</span>
+						<?php } ?>
+					</div>
+					<?php } ?>
+				<?php } ?>
+			</div>
+			<?php } ?>
+<!-- 				<div class="accordion" data-img="services.jpg">
 					<header>Elektrisüsteemid</header>
 					<div class="item">
 						<p>Automaatlülitite paigaldus ning vahetus</p>
@@ -313,7 +331,7 @@ ka Teie vara oleks ohutud.
 					<div class="item">
 						<p>Elektriajamiga juhtimine</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

@@ -67,20 +67,13 @@
 					<h2>WHO WE ARE?</h2>
 					<p class="sub-heading">WHAT ARE WE DOING?</p>
 					<p class="white-color">
-						&quot;VoltPartner OU&quot; provides a full range of electrical installation works in Tallinn and Estonia. The range of
-						services includes: design works, wiring, video surveillance, access control, alarm and ‘smart home’ systems for
-						residential buildings, apartments, as well as industrial premises and offices.
-						Our goal is to make your life more convenient and safer, thanks to our experience and latest technologies.
+						<?php echo $row["main_text"]; ?>
 					</p>
 					<!-- <img src="img/cable.svg" class="cable" alt="cable"> -->
 				</div>
 				<div class="aside-column right">
 					<p class="white-color">
-						VoltPartner is actively developing in electrical engineering field. We professionally and qualitatively carry out
-						projects, as our work is a guarantee for your safety. All electrical work carried out using the most modern
-						solutions and in accordance with current regulation document requirements.
-						Work is carried out by highly professional electrical engineers with more than ten years experience. Therefore,
-						we can guarantee that works installed by our specialists will serve you reliably for a long time.
+						<?php echo $row["side_text"]; ?>
 					</p>
 				</div>
 			</div>

@@ -11,32 +11,7 @@ else {
 }
 ?>
 <?php 
-$data = array(
-	'et' => [
-			'Tööd valmistatakse vastavalt reeglitele ja dokumentatsioonile',
-			'Spetsialistide poolt tehtud tööd teenivad Teile usaldusväärselt ning pikka aega',
-			'Meie spetsialistide kõrge kvalifikatsioon võimaldab teostada erinevate raskustasemete töid.',
-			'Meie spetsalistid töötavad Teile mugavaimal ajal',
-			'Garantii tehtud töödele alates 2 aastast',
-			'Tasuta spetsialisti kutsung hindamaks raskeid töid'
-		],
-		'ru' => [
-			'Работы осуществляются в соответствии с правилами и документации',
-			'Работа проделанная нашим специалистом прослужит вам долгое время',
-			'Высокая квалификация наших специалистов позволяет осуществлять работу разного уровня сложности',
-			'Наши специалисты работают в удобное для вас время',
-			'Гарантия на проделанные работы начиная от 2 лет',
-			'Бесплатный вызов специалиста для оценки сложности работ'
-		],
-		'en' => [
-			'Work is carried out in accordance with rules and allowance',
-			'Work that\'s done by our employee will last you long',
-			'Employees high qualification allows to carry out any complexity work',
-			'Our experts will work at convenient time for you',
-			'Warranty from 2 years for our services',
-			'Free visit for evaluation complex works'
-		]
-);
+$obj = json_decode($row2['text']);
 $features = array(
 	'et' => [
 		'Kvaliteet',
@@ -69,42 +44,42 @@ $features = array(
 		<img src="img/kvaliteet_icon.png" alt="Kvaliteet">
 		<br><small><?php echo $features[$lang][0]; ?></small>
 		<span>
-			<?php echo $data[$lang][0]; ?>
+			<?php echo $obj->{'kvaliteet'}; ?>
 		</span>
 	</div>
 	<div>
 		<img src="img/turvalisus_icon.png" alt="Turvalisus">
 		<br><small><?php echo $features[$lang][1]; ?></small>
 		<span>
-			<?php echo $data[$lang][1]; ?>
+			<?php echo $obj->{'turvalisus'}; ?>
 		</span>
 	</div>
 	<div>
 		<img src="img/kogemus_icon.png" alt="Kogemus">
 		<br><small><?php echo $features[$lang][2]; ?></small>
 		<span>
-			<?php echo $data[$lang][2]; ?>
+			<?php echo $obj->{'kogemus'}; ?>
 		</span>
 	</div>
 	<div>
 		<img src="img/mugavaeg_icon.png" alt="Mugav aeg">
 		<br><small><?php echo $features[$lang][3]; ?></small>
 		<span>
-			<?php echo $data[$lang][3]; ?>
+			<?php echo $obj->{'mugav_aeg'}; ?>
 		</span>
 	</div>
 	<div>
 		<img src="img/garantii_icon.png" alt="Garantii">
 		<br><small><?php echo $features[$lang][4]; ?></small>
 		<span>
-			<?php echo $data[$lang][4]; ?>
+			<?php echo $obj->{'garantii'}; ?>
 		</span>
 	</div>
 	<div>
 		<img src="img/head_pakkumised_icon.png" alt="Head pakkumised">
 		<br><small><?php echo $features[$lang][5]; ?></small>
 		<span>
-			<?php echo $data[$lang][5]; ?>
+			<?php echo $obj->{'head_pakkumised'}; ?>
 		</span>
 	</div>
 </div>

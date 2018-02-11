@@ -1,5 +1,12 @@
 <?php include 'header.php'; ?>
 <body>
+	<div style="top: 200px;position: relative;z-index: 2344;padding: 25px; background: #fff;">
+		<?php
+		// $pw = hash_hmac('sha512', 'dmitri55581136', 'cfergwgw45wc6w75');
+		// echo $pw;
+		print_r($services_rows);
+		 ?>
+	</div>
 	<a href="#" class="burger-btn"><span></span></a>
 	<div class="mobile-menu">
 		<ul>
@@ -76,13 +83,13 @@
 					<h2>KES ME OLEME?</h2>
 					<p class="sub-heading">Mida me teeme?</p>
 					<p class="white-color">
-						<?php echo $row["main_text"]; ?>
+						<?php echo htmlspecialchars($row["main_text"], ENT_QUOTES, 'UTF-8'); ?>
 					</p>
 					<!-- <img src="img/cable.svg" class="cable" alt="cable"> -->
 				</div>
 				<div class="aside-column right">
 					<p class="white-color">
-						<?php echo $row["side_text"]; ?>
+						<?php echo htmlspecialchars($row["side_text"], ENT_QUOTES, 'UTF-8'); ?>
 					</p>
 				</div>
 			</div>

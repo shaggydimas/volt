@@ -1,17 +1,3 @@
-<?php
-$locale = '';
-$uri = explode('/', $_SERVER['REQUEST_URI']);
-if($uri[2] === 'ru') {
-	$locale = 'ru';
-}
-elseif($uri[2] === 'en') {
-	$locale = 'en';
-}
-else {
-	$locale = 'et';
-}
-include 'get_data.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
